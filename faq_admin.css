@@ -1,0 +1,823 @@
+
+/* Style- page admin */
+.table-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 75%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: darkmagenta;
+  }
+
+  .text2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding: 10px;
+    color: #fff; /* Couleur du texte en blanc */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+/* Styles général*/
+
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for better box model handling */
+}
+
+.wrapper {/* Ajoutez la classe wrapper pour englober tout le contenu */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100% de la hauteur de la fenêtre visible */
+  
+}
+.main {
+    flex: 1; /* Le contenu principal prend autant d'espace que possible */
+    width: 100%;
+    background-color: #02182d;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 80px; /* Hauteur du pied de page */
+}
+
+
+ /* Style pour la barre de menu */
+
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin-bottom: 80px;
+}
+
+.banner {
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px; /* Ajustement de la hauteur et de la largeur de la barre */
+    background-color:#000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.main-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: 0.4s ease-in-out;
+}
+
+.main-menu a:hover {
+    color: #8f209a;
+}
+/* Style pour le Logo */
+
+.logo {
+    background-color: transparent;
+    padding: 0;
+}
+
+.logo a{
+    font-size: 24px;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+    cursor: pointer;
+}
+
+#menu-icon {
+    display: none;
+}
+
+
+
+
+/* Responsivité menu  */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #000;
+    }
+
+    .navbar.show .main-menu {
+        display: flex;
+    }
+
+    .main-menu a {
+        margin: 10px 0;
+    }
+
+    .navbar #menu-icon {
+        display: block;
+        cursor: pointer;
+        
+    }
+}
+
+
+
+
+
+/* Styles pour la section de texte */
+
+/*style de l'acceuil normal*/
+/* Ajoutez une classe .responsive-img pour rendre les images responsives */
+/* Ajoutez une classe .responsive-img pour rendre les images responsives */
+/* Ajoutez une classe .responsive-img pour rendre les images responsives */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.flex-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-top: 1%;
+    letter-spacing: 2px;
+    color: #2980b9;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text3 h1 {
+    font-family: serif;
+    font-size: 70px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    color: #8f209a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.texte1 {
+    font-family: serif;
+    font-size:  17px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.texte6 {
+    font-family: serif;
+    font-size: 17px;
+    padding-right: 20px; /* Ajoutez un padding à droite pour la séparation */
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: right; /* Alignez le texte à droite */
+}
+
+.photo-cine img {
+    width: 500px;
+}
+
+.photo-soncine img {
+    width: 500px;
+}
+
+/*texte de l'onglet evenement*/
+.text {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    color: #8f209a;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.text h2 {
+    font-family: serif;
+    font-size: 40px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    color: #8f209a;
+    margin-bottom: 20px; /* Ajoute un espace en bas du titre */
+    text-align: center;
+}
+
+.text h1 {
+    font-family: serif;
+    font-size: 40px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    color: #8f209a; /* Couleur du texte en blanc */
+    text-align: center;
+    margin-bottom: 20px; /* Réduit l'espace en bas du titre */
+}
+
+
+.text .soustext {
+    color: #fff;
+    font-size: 24px;
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 20px; /* Réduit l'espace en bas du sous-texte */
+}
+
+.text .p {
+    color: #fff; /* Couleur du texte en blanc */
+    text-align: center;
+   
+}
+
+
+
+
+
+
+/* Style pour les CGU  */
+
+.cgu-container {
+    width: 70%;
+    margin: auto;
+    padding: 40px 20px; /* Adjusted padding for top and bottom */
+    flex: 1; /* Ensure the container takes remaining vertical space */
+    background-color: rgba(2, 24, 45, 0.7); /* Transparent background color */
+    position: relative;
+}
+
+.cgu-container h1 {
+    color: #8f209a;
+    font-size: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cgu-container p {
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* Style pour a propos */
+
+.apropos-container {
+    width: 70%;
+    margin: auto;
+    padding: 40px 20px; /* Adjusted padding for top and bottom */
+    min-height: 100vh; /* Ensure the container takes at least the full height of the viewport */
+}
+
+.apropos-container h2 {
+    color: #8f209a;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.apropos-text h2 {
+    color: #2980b9;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.apropos-text p {
+    line-height: 1.5;
+    color: #fff;
+    text-align: center;
+}
+
+
+.team-gallery {
+    text-align: center;
+    margin-top: -350px;
+}
+
+.team-gallery h2 {
+   color: #2980b9;
+}
+
+.team-member {
+    display: inline-block;
+    margin: 20px; /* Ajoute une marge autour de chaque membre de l'équipe */
+    vertical-align: top;
+}
+
+.container-img {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+    width: 250px;
+}
+
+.container-img img {
+    width: 100%; /* Redimensionne les images à 100% de la largeur du conteneur */
+    height: auto; /* Maintient le rapport hauteur/largeur original */
+    transition: transform 0.3s; /* Ajout d'une transition pour l'effet de zoom on hover */
+}
+
+.infos-hover {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0; /* Rend l'arrière-plan transparent au départ */
+    transition: opacity 0.3s; /* Ajout d'une transition pour l'effet de fondu en survol */
+}
+
+.infos-hover p {
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member:hover .container-img img {
+    transform: scale(1.1); /* Effet de zoom on hover */
+}
+
+.team-member:hover .infos-hover {
+    opacity: 1; /* Rend l'arrière-plan visible en survol */
+}
+
+.team-member a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.team-member a:hover {
+    color: #8f209a;
+}
+
+
+
+
+
+
+
+
+
+/* Style du Footer */
+
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.972);
+    padding: 10px;
+    color: #943232;
+    text-align: center;
+    position: fixed; /* ou position: absolute; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; /* Assurez-vous que le z-index est supérieur à celui du reste du contenu */
+    font-family: Arial, sans-serif;
+}
+
+.centered-image {
+    margin-bottom: 20px;
+}
+
+.centered-image img {
+    width: 100px; /* Adjust the width of the logo as needed */
+    height: auto;
+}
+
+.menu3 {
+    display: flex;
+    justify-content: center;
+}
+
+.menu3 ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu3 li {
+    margin-right: 20px;
+
+}
+.menu3 a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu3 a:hover {
+    color: #8f209a;
+}
+
+
+
+
+
+
+
+
+
+/* Style pour la section FAQ */
+
+.faq-section {
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Style pour chaque question */
+.faq-item {
+   
+    margin: 0 auto;
+    background-color: rgb(77, 77, 77);
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 2px solid #8f209a; /* Ajout de la bordure violette */
+    border-radius: 40px; /* Ajout de la bordure arrondie */
+}
+
+/* Style pour le texte de la question */
+.question {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style pour l'icône de basculement (flèche vers le bas) */
+.toggle-icon {
+    font-size: 20px;
+}
+
+/* Style pour la réponse (initialement cachée) */
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+/* Style pour la réponse visible lorsqu'une question est déroulée */
+.answer p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+/* Style pour la réponse visible lorsque la question est déroulée */
+.faq-item.active .answer {
+    max-height: 1000px; /* Valeur suffisamment grande pour afficher la réponse complète */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Style pour la page contact*/
+
+.contact {
+    padding: 20px;
+}
+
+.btn{
+    max-width: 25%;
+    translate: 150%;
+    padding: auto;
+}
+
+/* Styles spécifiques pour le formulaire */
+.formulaire {
+   
+    margin: 0 auto;
+    background-color: rgb(77, 77, 77);
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 2px solid #8f209a; /* Ajout de la bordure violette */
+    border-radius: 40px; /* Ajout de la bordure arrondie */
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    color : white;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid violet; /* Ajout de la bordure violette */
+    border-radius: 5px; /* Ajout de la bordure arrondie */
+}
+
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid violet; /* Ajout de la bordure violette */
+    border-radius: 5px; /* Ajout de la bordure arrondie */
+}
+
+form button {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid violet; /* Ajout de la bordure violette */
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: violet; 
+    margin-bottom: 40px;
+}
+
+.flecheContact img {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    margin: 10px;
+    transform: rotate(180deg);
+    max-width: 10%;
+    max-height: 15%;
+}
+
+.SN2Contact img {
+    position: absolute;
+    top: 19.8%;
+    left: 35%;
+    transform: translateX(-50%);
+    max-width: 7%;
+    max-height: 25%;
+}
+
+
+
+
+
+
+
+
+/* Style pour la Page evenement */
+
+
+/* Ajoutez ce style pour centrer les éléments et les espacer */
+.event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Ajustez cet espace selon vos besoins */
+}
+
+details {
+    width: 50%; /* Ajustez la largeur selon vos besoins */
+    margin: auto;
+    text-align: center;
+}
+
+details summary {
+    font-size: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+
+details p {
+    font-size: 18px;
+}
+
+/* Ajoutez un style pour la sous-liste */
+details ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centre les éléments de la liste principale */
+}
+
+details li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+/* Ajoutez ces styles pour la barre de recherche */
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid violet;
+    border-radius: 5px;
+}
+
+/* Ajoutez ces styles pour les boutons d'ajout de cinéma et salle */
+.add-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.add-options button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #62588b; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-options button:hover {
+    background-color: #190d1a; /* Couleur de fond du bouton au survol */
+}
+
+
+/* Ajoutez ces styles pour la liste des cinémas et salles */
+
+.cinema-list {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.cinema-list li {
+    font-size: 16px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.cinema-list li::before {
+    content: '\2022';
+    color: #fff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: -15px;
+}
+
+.cinema-list .salles li {
+    font-size: 16px;
+    margin-left: 15px;
+    position: relative;
+}
+
+.cinema-list .salles li::before {
+    content: '-';
+    color: #fff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: -15px;
+}
+
+
+
+/* Styles pour la page de profil */
+
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.profile-container h1 {
+    color: #8f209a;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.password-form {
+    max-width: 400px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.password-form label {
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+
+.password-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid violet;
+    border-radius: 5px;
+}
+
+.password-form button {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid violet;
+    border-radius: 5px;
+    width: 100%;
+}
+
+

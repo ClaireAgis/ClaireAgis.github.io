@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Soundneo</title>
+    <link rel="stylesheet" href="accueil.css">
+    
+</head>
+<body class="main">
+    <div class="wrapper">
+        
+
+        <div class="contact">
+            <form>
+                <h1>Contactez-nous !</h1>
+        
+                <label for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required>
+        
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+        
+                <label for="mail">Email :</label>
+                <input type="text" id="mail" name="mail" required>
+
+                <label for="telephone">Télephone :</label>
+                <input type="text" id="telephone" name="telephone" required>
+        
+                <label for="description">Message :</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        
+        <div class="flecheContact">
+            <a href="accueil.php">
+                <img src="images/fleche.png" alt="fleche">
+            </a>
+        </div>
+
+     <!-- Bas de page -->
+    <div class="footer"  style="display: none;">
+        <div class="centered-image">
+            <img src="images/logo_ecriture1.png" alt="Sound 2 Image">
+        </div>
+        <div class="menu3">
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cgu.html">CGU</a></li>
+                <li><a href="faq.php">FAQ</a></li>
+                <li><a href="mentions.html">Mentions Légales</a></li>
+            </ul>
+        </div>
+       
+ 
+    </div>
+
+    <!-- Script pour le menu hamburger et le footer -->
+    <script>
+        document.getElementById('menu-icon').addEventListener('click', function() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('show');
+        });
+    </script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('.footer');
+            var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+            // Ajustez cette valeur selon votre besoin, cela détermine à quelle distance du bas de la page le footer doit apparaître
+            var triggerDistance = 200;
+
+            if (scrollPosition > (document.documentElement.scrollHeight - window.innerHeight - triggerDistance)) {
+                footer.style.display = 'block';
+            } else {
+                footer.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+</html>
